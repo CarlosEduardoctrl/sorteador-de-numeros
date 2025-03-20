@@ -3,9 +3,10 @@ function sortear(){
     let de = parseInt(document.getElementById("de").value);
     let ate = parseInt(document.getElementById("ate").value);
 
-    //alert(`quantidade: ${quantidade}\n` +
-      //  `de: ${de}\n` +
-        //`ate: ${ate}`);
+    if(de >= ate){
+      alert('campo "do número" deve ser inferior ao campo "ate o número",verifique os numeros e tente novamente.')
+    }
+
 let numerosSorteados = [];
 for (let i = 0; i < quantidade; i++) {
     let numero = numeroAleatorio(de, ate);
